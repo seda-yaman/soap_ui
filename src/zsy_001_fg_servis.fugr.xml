@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Soap Servis Fonksiyon Grubu</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZSY_001_FG_SERVISTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZSY_001_FG_SERVIS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZSY_001_FM_SERVIS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Soap Servis Fonksiyon Modülü</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_MALZEME</PARAMETER>
+       <TYP>ZSY_001_S_MALZEME</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_STOK</PARAMETER>
+       <TYP>ZSY_001_TT_STOK</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ES_RESULT</PARAMETER>
+       <TYP>ZSY_001_S_RESULT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MATNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_MALZEME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_STOK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Stok Verisi Table Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Servis Bilgisine Ait Durum Structure</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
